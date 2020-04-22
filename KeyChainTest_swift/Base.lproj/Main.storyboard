@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeyChainTest_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저장하려는 값" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oe-OX-nnh">
+                                <rect key="frame" x="50" y="111" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJ2-t1-X8Q">
+                                <rect key="frame" x="181" y="104" width="179" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저장하려는 키" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA7-NR-Ybf">
+                                <rect key="frame" x="50" y="153" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jmo-VJ-532">
+                                <rect key="frame" x="181" y="146" width="179" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1L-zN-eUL">
+                                <rect key="frame" x="58" y="235" width="30" height="30"/>
+                                <state key="normal" title="저장"/>
+                                <connections>
+                                    <action selector="saveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBq-d7-agx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqg-g4-AEc">
+                                <rect key="frame" x="130" y="235" width="30" height="30"/>
+                                <state key="normal" title="수정"/>
+                                <connections>
+                                    <action selector="updateBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foT-ZS-h6E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsJ-Fd-eNg">
+                                <rect key="frame" x="200" y="235" width="30" height="30"/>
+                                <state key="normal" title="삭제"/>
+                                <connections>
+                                    <action selector="deleteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h6x-Y6-i5x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkK-Mq-uhi">
+                                <rect key="frame" x="322" y="234" width="30" height="30"/>
+                                <state key="normal" title="찾기"/>
+                                <connections>
+                                    <action selector="findBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQK-n8-efP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amr-Go-bsZ">
+                                <rect key="frame" x="58" y="347" width="302" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQ3-Op-2Tw">
+                                <rect key="frame" x="46" y="193" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RsJ-Fd-eNg" firstAttribute="leading" secondItem="gqg-g4-AEc" secondAttribute="trailing" constant="40" id="0cB-i6-LO1"/>
+                            <constraint firstItem="5oe-OX-nnh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="1Ho-Ve-Av2"/>
+                            <constraint firstItem="VQ3-Op-2Tw" firstAttribute="top" secondItem="Jmo-VJ-532" secondAttribute="bottom" constant="13" id="2a5-KZ-Ky2"/>
+                            <constraint firstItem="EJ2-t1-X8Q" firstAttribute="leading" secondItem="5oe-OX-nnh" secondAttribute="trailing" constant="38" id="3Lf-OM-0p6"/>
+                            <constraint firstItem="v1L-zN-eUL" firstAttribute="top" secondItem="VQ3-Op-2Tw" secondAttribute="bottom" constant="8" id="6CR-hl-pq2"/>
+                            <constraint firstItem="v1L-zN-eUL" firstAttribute="baseline" secondItem="gqg-g4-AEc" secondAttribute="baseline" id="CW2-my-Q3Q"/>
+                            <constraint firstItem="Amr-Go-bsZ" firstAttribute="top" secondItem="v1L-zN-eUL" secondAttribute="bottom" constant="82" id="IhV-z7-8Uj"/>
+                            <constraint firstItem="Jmo-VJ-532" firstAttribute="top" secondItem="EJ2-t1-X8Q" secondAttribute="bottom" constant="8" id="JwC-HL-fWc"/>
+                            <constraint firstItem="VQ3-Op-2Tw" firstAttribute="top" secondItem="QA7-NR-Ybf" secondAttribute="bottom" constant="19" id="Lyp-4A-8Kg"/>
+                            <constraint firstItem="EJ2-t1-X8Q" firstAttribute="trailing" secondItem="Jmo-VJ-532" secondAttribute="trailing" id="OHF-DT-ItE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EJ2-t1-X8Q" secondAttribute="trailing" constant="54" id="Poa-4T-bln"/>
+                            <constraint firstItem="gqg-g4-AEc" firstAttribute="baseline" secondItem="RsJ-Fd-eNg" secondAttribute="baseline" id="TaD-r9-mcU"/>
+                            <constraint firstItem="mkK-Mq-uhi" firstAttribute="leading" secondItem="RsJ-Fd-eNg" secondAttribute="trailing" constant="92" id="a0m-1S-1Zf"/>
+                            <constraint firstItem="EJ2-t1-X8Q" firstAttribute="leading" secondItem="Jmo-VJ-532" secondAttribute="leading" id="bsy-WY-bSN"/>
+                            <constraint firstItem="VQ3-Op-2Tw" firstAttribute="trailing" secondItem="Amr-Go-bsZ" secondAttribute="trailing" id="cG4-GK-uTU"/>
+                            <constraint firstItem="5oe-OX-nnh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="eOA-zQ-1Kf"/>
+                            <constraint firstItem="mkK-Mq-uhi" firstAttribute="top" secondItem="VQ3-Op-2Tw" secondAttribute="bottom" constant="7" id="f8t-8G-KUE"/>
+                            <constraint firstItem="VQ3-Op-2Tw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="lah-15-cyg"/>
+                            <constraint firstItem="5oe-OX-nnh" firstAttribute="centerY" secondItem="EJ2-t1-X8Q" secondAttribute="centerY" id="nbK-fh-WPU"/>
+                            <constraint firstItem="5oe-OX-nnh" firstAttribute="leading" secondItem="QA7-NR-Ybf" secondAttribute="leading" id="oEW-gM-MTt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Amr-Go-bsZ" secondAttribute="bottom" constant="368" id="onM-if-13L"/>
+                            <constraint firstItem="QA7-NR-Ybf" firstAttribute="centerY" secondItem="Jmo-VJ-532" secondAttribute="centerY" id="r5J-Dn-ZZJ"/>
+                            <constraint firstItem="v1L-zN-eUL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="w5F-EY-Eyg"/>
+                            <constraint firstItem="v1L-zN-eUL" firstAttribute="leading" secondItem="Amr-Go-bsZ" secondAttribute="leading" id="xcR-hE-5nH"/>
+                            <constraint firstItem="Jmo-VJ-532" firstAttribute="trailing" secondItem="VQ3-Op-2Tw" secondAttribute="trailing" id="yed-Yo-Phk"/>
+                            <constraint firstItem="gqg-g4-AEc" firstAttribute="leading" secondItem="v1L-zN-eUL" secondAttribute="trailing" constant="42" id="yqh-IB-90m"/>
+                            <constraint firstItem="EJ2-t1-X8Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="zb1-2J-Wlg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="findKey" destination="VQ3-Op-2Tw" id="giA-mg-pYM"/>
+                        <outlet property="resLabel" destination="Amr-Go-bsZ" id="tgC-vi-u1h"/>
+                        <outlet property="saveKey" destination="Jmo-VJ-532" id="mep-m2-xod"/>
+                        <outlet property="saveValue" destination="EJ2-t1-X8Q" id="TtH-pH-6vu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
